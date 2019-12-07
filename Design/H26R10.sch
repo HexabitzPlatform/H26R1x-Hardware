@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3646,7 +3646,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="VDD" device=""/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="A2V5"/>
-<part name="R5" library="Hexabitz" deviceset="R-0805" device="" value="1.00K">
+<part name="R5" library="Hexabitz" deviceset="R-0603" device="" value="1.00K">
 <attribute name="MFN" value="Yageo"/>
 <attribute name="MPN" value="RC0603FR-0710KL"/>
 <attribute name="OCTOPART_URL" value="https://octopart.com/rc0603fr-0710kl-yageo-40025538?r=sp&amp;s=SQw8RrYPSD2xso48oCtW2w"/>
@@ -6119,20 +6119,20 @@ Thermocouple Interface</text>
 <attribute name="NAME" x="132.334" y="53.975" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="136.144" y="49.149" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R1" gate="G$1" x="127" y="163.83" smashed="yes">
-<attribute name="NAME" x="123.19" y="165.3286" size="1.778" layer="95"/>
-<attribute name="VALUE" x="123.19" y="160.528" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="124.46" y="171.45" smashed="yes">
+<attribute name="NAME" x="120.65" y="172.9486" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.65" y="168.148" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="G$1" x="116.84" y="163.83" smashed="yes" rot="MR180">
-<attribute name="NAME" x="112.268" y="167.386" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="104.648" y="170.815" size="1.778" layer="96" rot="MR180"/>
+<instance part="D1" gate="G$1" x="114.3" y="171.45" smashed="yes" rot="MR180">
+<attribute name="NAME" x="109.728" y="175.006" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="102.108" y="178.435" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="X1" gate="G$1" x="195.58" y="144.78" smashed="yes">
 <attribute name="NAME" x="201.93" y="147.574" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="214.63" y="140.97" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND1" gate="1" x="109.22" y="158.75" smashed="yes">
-<attribute name="VALUE" x="106.68" y="156.21" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="106.68" y="166.37" smashed="yes">
+<attribute name="VALUE" x="104.14" y="163.83" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="138.43" y="105.41" smashed="yes" rot="R90">
 <attribute name="VALUE" x="135.255" y="106.045" size="1.778" layer="96" rot="R180"/>
@@ -6339,9 +6339,9 @@ Thermocouple Interface</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="109.22" y1="161.29" x2="109.22" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="168.91" x2="106.68" y2="171.45" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="109.22" y1="163.83" x2="111.76" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="171.45" x2="109.22" y2="171.45" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -6509,18 +6509,11 @@ Thermocouple Interface</text>
 <label x="71.12" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="148.59" y1="163.83" x2="132.08" y2="163.83" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$0" pin="PA11"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="121.92" y1="163.83" x2="119.38" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="171.45" x2="116.84" y2="171.45" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6729,6 +6722,13 @@ Thermocouple Interface</text>
 <pinref part="P1" gate="G$1" pin="SD7"/>
 <wire x1="68.58" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
 <label x="71.12" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$0" pin="PA8"/>
+<wire x1="129.54" y1="171.45" x2="148.59" y2="171.45" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
