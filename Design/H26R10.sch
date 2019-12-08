@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1498,7 +1498,7 @@ Metric Code Size 3216</description>
 <text x="5.08" y="7.62" size="2.54" layer="95" align="top-left">&gt;NAME</text>
 <pin name="INPUT" x="0" y="0" visible="pad" length="middle"/>
 <pin name="OUTPUT" x="25.4" y="0" visible="pad" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="-7.62" visible="pad" length="point"/>
+<pin name="GND" x="12.7" y="-7.62" visible="pad" length="middle" rot="R90"/>
 </symbol>
 <symbol name="STMICROELECTRONICS_STM32F091RBT6_0_0">
 <description>MC-ARM-STM32F091-LQFP64</description>
@@ -2914,13 +2914,13 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <vertex x="16.37" y="-1.65"/>
 <vertex x="17.32" y="0"/>
 </polygon>
-<smd name="PAD_PU13" x="8.26" y="-14.31" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<smd name="PAD_PU13" x="7.752" y="-15.072" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
 <polygon width="0.1" layer="1">
 <vertex x="6.76" y="-15" curve="-120"/>
 <vertex x="9.61" y="-13.35"/>
 <vertex x="8.66" y="-15"/>
 </polygon>
-<smd name="PAD_PD13" x="8.26" y="-14.31" dx="1" dy="1" layer="16" roundness="100" cream="no"/>
+<smd name="PAD_PD13" x="7.752" y="-15.072" dx="1" dy="1" layer="16" roundness="100" cream="no"/>
 <polygon width="0.1" layer="16">
 <vertex x="6.76" y="-15" curve="-120"/>
 <vertex x="9.61" y="-13.35"/>
@@ -2936,13 +2936,13 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <vertex x="9.61" y="-13.35"/>
 <vertex x="8.66" y="-15"/>
 </polygon>
-<smd name="PAD_PU18" x="-8.26" y="-14.31" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<smd name="PAD_PU18" x="-7.752" y="-15.072" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
 <polygon width="0.1" layer="1">
 <vertex x="-6.76" y="-15" curve="120"/>
 <vertex x="-9.61" y="-13.35"/>
 <vertex x="-8.66" y="-15"/>
 </polygon>
-<smd name="PAD_PD18" x="-8.26" y="-14.31" dx="1" dy="1" layer="16" roundness="100" cream="no"/>
+<smd name="PAD_PD18" x="-7.752" y="-15.072" dx="1" dy="1" layer="16" roundness="100" cream="no"/>
 <polygon width="0.1" layer="16">
 <vertex x="-6.76" y="-15" curve="120"/>
 <vertex x="-9.61" y="-13.35"/>
@@ -3635,7 +3635,6 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <attribute name="VOLTAGE_RATING" value="25V"/>
 </part>
 <part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
-<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="SUPPLY27" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="A2V5"/>
 <part name="FB4" library="Hexabitz" deviceset="FB-0805" device="" value="330@100MHz">
@@ -15334,9 +15333,6 @@ Analog Input</text>
 <instance part="SUPPLY22" gate="G$1" x="160.02" y="35.56" smashed="yes">
 <attribute name="VALUE" x="157.353" y="32.385" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY19" gate="G$1" x="149.86" y="35.56" smashed="yes">
-<attribute name="VALUE" x="147.193" y="32.385" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY28" gate="G$1" x="210.82" y="35.56" smashed="yes">
 <attribute name="VALUE" x="208.153" y="32.385" size="1.778" layer="96"/>
 </instance>
@@ -15548,14 +15544,29 @@ Analog Input</text>
 <wire x1="255.27" y1="158.75" x2="255.27" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="FB2" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="39.37" x2="149.86" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="39.37" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="39.37" x2="138.43" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="41.91" x2="138.43" y2="39.37" width="0.1524" layer="91"/>
+<junction x="138.43" y="39.37"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="138.43" y1="39.37" x2="138.43" y2="36.83" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$0" pin="GND"/>
+<wire x1="121.92" y1="43.18" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
+<junction x="121.92" y="39.37"/>
+<pinref part="C12" gate="G$0" pin="GND"/>
+<wire x1="121.92" y1="39.37" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="39.37" x2="149.86" y2="39.37" width="0.1524" layer="91"/>
+<junction x="149.86" y="39.37"/>
 <pinref part="C19" gate="G$1" pin="2"/>
 <pinref part="SUPPLY22" gate="G$1" pin="AGND"/>
-<wire x1="160.02" y1="38.1" x2="160.02" y2="41.91" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="SUPPLY19" gate="G$1" pin="AGND"/>
-<wire x1="149.86" y1="38.1" x2="149.86" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="38.1" x2="160.02" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="39.37" x2="160.02" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="39.37" x2="160.02" y2="39.37" width="0.1524" layer="91"/>
+<junction x="160.02" y="39.37"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="GND"/>
@@ -15893,21 +15904,6 @@ Analog Input</text>
 <segment>
 <pinref part="FB3" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$0" pin="OUTPUT"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="FB2" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="39.37" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="39.37" x2="138.43" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="45.72" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
-<junction x="121.92" y="39.37"/>
-<wire x1="121.92" y1="33.02" x2="121.92" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="138.43" y1="41.91" x2="138.43" y2="39.37" width="0.1524" layer="91"/>
-<junction x="138.43" y="39.37"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="138.43" y1="39.37" x2="138.43" y2="36.83" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+2.5V" class="0">
