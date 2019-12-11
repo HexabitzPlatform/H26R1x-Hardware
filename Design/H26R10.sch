@@ -3745,6 +3745,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="Hexabitz" deviceset="STM32F091RBT6" device="STMICROELECTRONICS_STM32F091RBT6_0_1"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6233,6 +6234,9 @@ Thermocouple Interface</text>
 <instance part="GND11" gate="1" x="196.85" y="102.87" smashed="yes" rot="R90">
 <attribute name="VALUE" x="198.12" y="105.41" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="GND12" gate="1" x="130.81" y="163.83" smashed="yes" rot="R270">
+<attribute name="VALUE" x="128.27" y="166.37" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6446,6 +6450,16 @@ Thermocouple Interface</text>
 <pinref part="U1" gate="G$0" pin="4_VSS"/>
 <wire x1="189.23" y1="95.25" x2="191.77" y2="95.25" width="0.1524" layer="91"/>
 <junction x="191.77" y="95.25"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$0" pin="PA11"/>
+<wire x1="133.35" y1="163.83" x2="147.32" y2="163.83" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$0" pin="PA12"/>
+<wire x1="147.32" y1="163.83" x2="148.59" y2="163.83" width="0.1524" layer="91"/>
+<wire x1="148.59" y1="161.29" x2="147.32" y2="161.29" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="161.29" x2="147.32" y2="163.83" width="0.1524" layer="91"/>
+<junction x="147.32" y="163.83"/>
 </segment>
 </net>
 <net name="UART5_TX" class="0">
@@ -15133,11 +15147,11 @@ Analog Input</text>
 <instance part="SUPPLY38" gate="G$1" x="257.81" y="35.56" smashed="yes">
 <attribute name="VALUE" x="255.143" y="32.385" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="91.44" y="166.37" smashed="yes">
-<attribute name="VALUE" x="88.773" y="163.195" size="1.778" layer="96"/>
+<instance part="SUPPLY13" gate="G$1" x="91.44" y="163.83" smashed="yes">
+<attribute name="VALUE" x="88.773" y="160.655" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="80.01" y="154.94" smashed="yes">
-<attribute name="VALUE" x="77.343" y="151.765" size="1.778" layer="96"/>
+<instance part="SUPPLY11" gate="G$1" x="80.01" y="152.4" smashed="yes">
+<attribute name="VALUE" x="77.343" y="149.225" size="1.778" layer="96"/>
 </instance>
 <instance part="P+3" gate="1" x="74.93" y="195.58" smashed="yes">
 <attribute name="VALUE" x="72.39" y="195.58" size="1.778" layer="96" rot="R90"/>
@@ -15499,6 +15513,7 @@ Analog Input</text>
 <segment>
 <pinref part="JP2" gate="1" pin="3"/>
 <pinref part="SUPPLY13" gate="G$1" pin="AGND"/>
+<wire x1="91.44" y1="166.37" x2="91.44" y2="168.91" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AIN" gate="-1" pin="K"/>
@@ -15528,6 +15543,7 @@ Analog Input</text>
 <segment>
 <pinref part="SUPPLY11" gate="G$1" pin="AGND"/>
 <pinref part="JP1" gate="1" pin="3"/>
+<wire x1="80.01" y1="154.94" x2="80.01" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="REF"/>
@@ -16049,6 +16065,49 @@ Analog Input</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,2,210.82,62.23,+5V,+2.5V,,,,"/>
+<approved hash="102,2,143.51,204.47,+5V,+2.5V,,,,"/>
+<approved hash="102,2,167.64,175.26,+5V,+2.5V,,,,"/>
+<approved hash="102,2,179.07,101.6,+5V,+2.5V,,,,"/>
+<approved hash="102,2,251.46,111.76,+5V,+2.5V,,,,"/>
+<approved hash="104,2,179.07,93.98,U5,VDD,AD8295_A2O,,,"/>
+<approved hash="104,2,179.07,88.9,U5,VIO,VDD,,,"/>
+<approved hash="104,2,67.31,85.09,U2,VS+,+15V,,,"/>
+<approved hash="104,2,107.95,85.09,U2,VS-,AGND,,,"/>
+<approved hash="104,1,40.64,167.64,P1,VDD2,VDD,,,"/>
+<approved hash="104,1,40.64,162.56,P1,VDD3,VDD,,,"/>
+<approved hash="104,1,40.64,157.48,P1,VDD4,VDD,,,"/>
+<approved hash="104,1,40.64,152.4,P1,VDD5,VDD,,,"/>
+<approved hash="104,1,40.64,147.32,P1,VDD6,VDD,,,"/>
+<approved hash="104,1,40.64,111.76,P1,GND2,GND,,,"/>
+<approved hash="104,1,40.64,106.68,P1,GND3,GND,,,"/>
+<approved hash="104,1,40.64,101.6,P1,GND4,GND,,,"/>
+<approved hash="104,1,40.64,96.52,P1,GND5,GND,,,"/>
+<approved hash="104,1,40.64,91.44,P1,GND6,GND,,,"/>
+<approved hash="104,1,40.64,142.24,P1,VDD7,VDD,,,"/>
+<approved hash="104,1,40.64,137.16,P1,VDD8,VDD,,,"/>
+<approved hash="104,1,40.64,132.08,P1,VDD9,VDD,,,"/>
+<approved hash="104,1,40.64,86.36,P1,GND7,GND,,,"/>
+<approved hash="104,1,40.64,81.28,P1,GND8,GND,,,"/>
+<approved hash="104,1,40.64,76.2,P1,GND9,GND,,,"/>
+<approved hash="104,1,148.59,105.41,U1,VBAT,VDD,,,"/>
+<approved hash="104,1,189.23,92.71,U1,VSSA,GND,,,"/>
+<approved hash="104,1,148.59,92.71,U1,VDDA,VDD,,,"/>
+<approved hash="104,1,189.23,102.87,U1,1_VSS,GND,,,"/>
+<approved hash="104,1,148.59,100.33,U1,1_VDD,VDD,,,"/>
+<approved hash="104,1,189.23,100.33,U1,2_VSS,GND,,,"/>
+<approved hash="104,1,148.59,97.79,U1,2_VDD,VDD,,,"/>
+<approved hash="104,1,189.23,97.79,U1,3_VSS,GND,,,"/>
+<approved hash="104,1,148.59,102.87,U1,VDDIO2,VDD,,,"/>
+<approved hash="104,1,189.23,95.25,U1,4_VSS,GND,,,"/>
+<approved hash="104,1,148.59,95.25,U1,3_VDD,VDD,,,"/>
+<approved hash="111,1,195.58,140.97,N$6,,,,,"/>
+<approved hash="111,2,91.44,167.64,N$8,,,,,"/>
+<approved hash="111,2,80.01,156.21,N$10,,,,,"/>
+<approved hash="113,2,88.9,170.857,JP2,,,,,"/>
+<approved hash="113,2,77.47,159.427,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
