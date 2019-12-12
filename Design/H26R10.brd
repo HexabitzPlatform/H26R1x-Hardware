@@ -2157,8 +2157,10 @@ design rules under a new name.</description>
 </element>
 <element name="PWR" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" package="1751251" package3d_urn="urn:adsk.eagle:package:9394/1" value="1751251" x="22.987" y="13.843" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="22.987" y="13.843" size="1.9304" layer="27" font="vector" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="22.987" y="13.843" size="1.9304" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MFN" value="Phoenix Contact" x="22.987" y="13.843" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="1751251" x="22.987" y="13.843" size="1.9304" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="33.261" y="13.1445" size="1.778" layer="25" rot="R90"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/1751251-phoenix+contact-36473?r=sp&amp;s=9M0VWNoHTyq04j3qI6lQOQ" x="22.987" y="13.843" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.987" y="13.843" size="1.9304" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="22.987" y="13.843" size="1.9304" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="15" x="22.987" y="13.843" size="1.9304" layer="27" font="vector" rot="R180" display="off"/>
@@ -2442,10 +2444,10 @@ design rules under a new name.</description>
 </element>
 <element name="C19" library="Hexabitz" package="C-0603" value="100nF" x="29.591" y="27.94" smashed="yes" rot="R270">
 <attribute name="CAPACITANCE" value="100nF" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFN" value="Murata" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="GRM188R71E104KA01D" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFN" value="KEMET" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="C0603C104K8RACTU" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="29.083" y="26.035" size="1.016" layer="25" rot="R270"/>
-<attribute name="OCTOPART_URL" value="https://octopart.com/grm188r71e104ka01d-murata-196239?r=sp&amp;s=9Sa0iYM-THq9pjXKXbxryA" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/c0603c104k8ractu-kemet-145075?r=sp&amp;s=9bS9ASSwSEqMCE9KBEQZ0g" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOLERANCE" value="10%" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="27.686" y="28.575" size="1.016" layer="27" rot="R270"/>
 <attribute name="VOLTAGE_RATING" value="25V" x="29.591" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2477,10 +2479,10 @@ design rules under a new name.</description>
 </element>
 <element name="C20" library="Hexabitz" package="C-0603" value="100nF" x="25.908" y="43.815" smashed="yes" rot="R270">
 <attribute name="CAPACITANCE" value="100nF" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFN" value="Murata" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="GRM188R71E104KA01D" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFN" value="KEMET" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="C0603C104K8RACTU" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="26.924" y="44.704" size="1.016" layer="25" rot="R270"/>
-<attribute name="OCTOPART_URL" value="https://octopart.com/grm188r71e104ka01d-murata-196239?r=sp&amp;s=9Sa0iYM-THq9pjXKXbxryA" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/c0603c104k8ractu-kemet-145075?r=sp&amp;s=9bS9ASSwSEqMCE9KBEQZ0g" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOLERANCE" value="10%" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="24.003" y="44.45" size="1.016" layer="27" rot="R270"/>
 <attribute name="VOLTAGE_RATING" value="25V" x="25.908" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2579,9 +2581,11 @@ design rules under a new name.</description>
 <attribute name="INTERNAL_RAM_SIZE_KB" value="32" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>
 <attribute name="IOS_HIGH_CURRENT" value="52" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="STMicroelectronics" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>
+<attribute name="MFN" value="STMicroelectronics" x="22.987" y="27.559" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="STM32F091RBT6" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="20.606" y="34.338" size="1" layer="26" rot="MR0"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/stm32f091rbt6-stmicroelectronics-51988681?r=sp&amp;s=nshh1g3RRwuzez1YsQrt1w" x="22.987" y="27.559" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OPERATING_FREQUENCYF_PROCESSOR_SPEED_MHZ" value="48" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>
 <attribute name="PACKAGE_DESCRIPTION" value="64-Pin Low-profile Quad Flat Package, Body 10 x 10 mm, Pitch 0.5 mm" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>
 <attribute name="PACKAGE_REFERENCE" value="LQFP64" x="22.987" y="27.559" size="1.016" layer="28" rot="MR0" display="off"/>

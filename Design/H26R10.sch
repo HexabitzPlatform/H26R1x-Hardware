@@ -3490,7 +3490,11 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <attribute name="MPN" value="1984646"/>
 <attribute name="OCTOPART_URL" value="https://octopart.com/1984646-phoenix+contact-50274?r=sp&amp;s=drI_GVM4QHaL48lSCATrxQ"/>
 </part>
-<part name="PWR" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751251" device="" package3d_urn="urn:adsk.eagle:package:9394/1"/>
+<part name="PWR" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751251" device="" package3d_urn="urn:adsk.eagle:package:9394/1">
+<attribute name="MFN" value="Phoenix Contact"/>
+<attribute name="MPN" value="1751251"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/1751251-phoenix+contact-36473?r=sp&amp;s=9M0VWNoHTyq04j3qI6lQOQ"/>
+</part>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1">
 <attribute name="MFN" value="TE Connectivity"/>
 <attribute name="MPN" value="5-146274-3"/>
@@ -3628,9 +3632,9 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 </part>
 <part name="C19" library="Hexabitz" deviceset="C-0603" device="" value="100nF">
 <attribute name="CAPACITANCE" value="100nF"/>
-<attribute name="MFN" value="Murata"/>
-<attribute name="MPN" value="GRM188R71E104KA01D"/>
-<attribute name="OCTOPART_URL" value="https://octopart.com/grm188r71e104ka01d-murata-196239?r=sp&amp;s=9Sa0iYM-THq9pjXKXbxryA"/>
+<attribute name="MFN" value="KEMET"/>
+<attribute name="MPN" value="C0603C104K8RACTU"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/c0603c104k8ractu-kemet-145075?r=sp&amp;s=9bS9ASSwSEqMCE9KBEQZ0g"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE_RATING" value="25V"/>
 </part>
@@ -3662,9 +3666,9 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="C20" library="Hexabitz" deviceset="C-0603" device="" value="100nF">
 <attribute name="CAPACITANCE" value="100nF"/>
-<attribute name="MFN" value="Murata"/>
-<attribute name="MPN" value="GRM188R71E104KA01D"/>
-<attribute name="OCTOPART_URL" value="https://octopart.com/grm188r71e104ka01d-murata-196239?r=sp&amp;s=9Sa0iYM-THq9pjXKXbxryA"/>
+<attribute name="MFN" value="KEMET"/>
+<attribute name="MPN" value="C0603C104K8RACTU"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/c0603c104k8ractu-kemet-145075?r=sp&amp;s=9bS9ASSwSEqMCE9KBEQZ0g"/>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE_RATING" value="25V"/>
 </part>
@@ -3743,7 +3747,10 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="SUPPLY40" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="AGND" device=""/>
 <part name="P1" library="hexabitz_connectors" deviceset="HEXABIT_?_X2_NO_P5_P10_P11_P20" device="17.32"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="U1" library="Hexabitz" deviceset="STM32F091RBT6" device="STMICROELECTRONICS_STM32F091RBT6_0_1"/>
+<part name="U1" library="Hexabitz" deviceset="STM32F091RBT6" device="STMICROELECTRONICS_STM32F091RBT6_0_1">
+<attribute name="MFN" value="STMicroelectronics"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/stm32f091rbt6-stmicroelectronics-51988681?r=sp&amp;s=nshh1g3RRwuzez1YsQrt1w"/>
+</part>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
@@ -6230,6 +6237,8 @@ Thermocouple Interface</text>
 </instance>
 <instance part="U1" gate="G$0" x="168.91" y="140.97" smashed="yes">
 <attribute name="NAME" x="154.94" y="198.12" size="2.54" layer="95" align="top-left"/>
+<attribute name="MFN" x="168.91" y="140.97" size="1.778" layer="96" display="off"/>
+<attribute name="OCTOPART_URL" x="168.91" y="140.97" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND11" gate="1" x="196.85" y="102.87" smashed="yes" rot="R90">
 <attribute name="VALUE" x="198.12" y="105.41" size="1.778" layer="96" rot="R270"/>
@@ -15122,6 +15131,8 @@ Analog Input</text>
 <instance part="PWR" gate="-1" x="41.91" y="27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="40.64" y="28.829" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="27.94" y="28.829" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MFN" x="41.91" y="27.94" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="OCTOPART_URL" x="41.91" y="27.94" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="PWR" gate="-2" x="41.91" y="39.37" smashed="yes" rot="R180">
 <attribute name="NAME" x="40.64" y="40.259" size="1.778" layer="95" rot="R180"/>
